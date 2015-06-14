@@ -9,6 +9,11 @@ GITHUBTARBALL
     brewcask (0.0.6)
 
 GITHUBTARBALL
+  remote: boxen/puppet-chrome
+  specs:
+    chrome (1.2.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (2.0.1)
@@ -79,6 +84,11 @@ GITHUBTARBALL
     ruby (8.5.4)
 
 GITHUBTARBALL
+  remote: boxen/puppet-spectacle
+  specs:
+    spectacle (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
@@ -106,6 +116,7 @@ GITHUBTARBALL
 DEPENDENCIES
   boxen (= 3.11.1)
   brewcask (= 0.0.6)
+  chrome (= 1.2.0)
   dnsmasq (= 2.0.1)
   foreman (= 1.2.0)
   gcc (= 3.0.2)
@@ -123,6 +134,6 @@ DEPENDENCIES
   repository (= 2.4.1)
   ruby (= 8.5.4)
   stdlib (= 4.7.0)
+  spectacle (= 1.0.0)
   sudo (= 1.0.0)
   xquartz (= 1.2.1)
-
