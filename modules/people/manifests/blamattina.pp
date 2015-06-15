@@ -4,6 +4,7 @@ class people::blamattina {
   include dropbox
   include zsh
   include tmux
+  include alfred
 
   $home = "/Users/brian"
   $dotfiles = "${home}/dotfiles"
