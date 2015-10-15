@@ -4,5 +4,4 @@ class people::blamattina::homebrew_casks {
   # casks
   package { 'transporter-desktop': provider => 'brewcask' }
   package { 'backblaze': provider => 'brewcask' }
-  package { 'atom': provider => 'brewcask' }
 }
