@@ -8,7 +8,4 @@ class people::blamattina {
   include spectacle
   include dropbox
   include alfred
-
-  # Node JS
-  nodejs::version { '0.12': }
 }
