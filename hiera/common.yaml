@@ -22,6 +22,7 @@
 # # See https://github.com/boxen/puppet-java for docs
 # java::update_version: 51
 
+# See https://github.com/boxen/puppet-nodejs#hiera-configuration
 "nodejs::build::ensure": "204fe3f2c312e45288e63ce3abaf2b99298cf6c5"
 "nodejs::nodenv::ensure": "v0.3.0"
 
