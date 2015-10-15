@@ -59,11 +59,14 @@ GITHUBTARBALL
     hub (1.4.1)
 
 GITHUBTARBALL
+<<<<<<< HEAD
   remote: boxen/puppet-nginx
   specs:
     nginx (1.6.0)
 
 GITHUBTARBALL
+=======
+>>>>>>> Use 10.11 compatible nginx
   remote: boxen/puppet-nodejs
   specs:
     nodejs (5.0.0)
@@ -122,6 +125,11 @@ GITHUBTARBALL
   remote: boxen/puppet-zsh
   specs:
     zsh (1.0.0)
+
+GITHUBTARBALL
+  remote: orien/puppet-nginx
+  specs:
+    nginx (0.0.0)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
