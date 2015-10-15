@@ -11,10 +11,6 @@ class people::blamattina::osx_config {
   include osx::universal_access::enable_scrollwheel_zoom
 
   # Keyboard Config
-  class { 'osx::global::key_repeat_delay':
-    delay => 10
-  }
-  include osx::global::key_repeat_rate
   include osx::keyboard::capslock_to_control
 
   # Make Developer Tools available in Safari (ie: right-click and see
