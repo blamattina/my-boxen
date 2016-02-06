@@ -1,0 +1,2 @@
+class people::blamattina::links {
+}
