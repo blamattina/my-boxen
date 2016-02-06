@@ -5,4 +5,9 @@ class people::blamattina::links {
     ensure  => link,
     target  => "${home}/dotfiles/zshrc"
   }
+
+  file { "${home}/.aliases":
+    ensure  => link,
+    target  => "${home}/dotfiles/aliases"
+  }
 }
