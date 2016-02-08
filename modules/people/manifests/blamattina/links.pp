@@ -10,4 +10,14 @@ class people::blamattina::links {
     ensure  => link,
     target  => "${home}/dotfiles/aliases"
   }
+
+  file { "${home}/.vimrc":
+    ensure  => link,
+    target  => "${home}/dotfiles/vimrc"
+  }
+
+  file { "${home}/.vimrc.bundles":
+    ensure  => link,
+    target  => "${home}/dotfiles/vimrc.bundles"
+  }
 }
