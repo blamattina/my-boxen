@@ -9,10 +9,6 @@ class people::blamattina::homebrew {
   ]
   package { $homebrew_packages: }
 
-  # Configuration management
-  homebrew::tap { 'thoughtbot/formulae': }
-  package { 'rcm': ensure => present }
-
   # Text Editor
   package {
     'vim': ensure => present, install_options => [ '--override-system-vi' ]
