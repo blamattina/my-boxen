@@ -1,4 +1,7 @@
 class people::blamattina::node {
+  # Install flow using homebrew
+  package { 'flow': }
+
   # node versions
   nodejs::version {
     ['0.10.41', '0.12.7', '4.1.2', '4.2.6', '5.5.0']:
