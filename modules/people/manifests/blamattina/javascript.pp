@@ -1,4 +1,4 @@
-class people::blamattina::node {
+class people::blamattina::javascript {
   # Install flow using homebrew
   package { 'flow': }
 

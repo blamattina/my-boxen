@@ -4,7 +4,7 @@ class people::blamattina {
   include people::blamattina::homebrew_casks
   include people::blamattina::repositories
   include people::blamattina::links
-  include people::blamattina::node
+  include people::blamattina::javascript
 
   include chrome
   include spectacle
