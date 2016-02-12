@@ -30,4 +30,10 @@ class people::blamattina::javascript {
     version => '~> 1.14.0',
     node_version => '*'
   }
+
+  npm_module { 'diff-so-fancy':
+    module => 'diff-so-fancy',
+    version => '~> 0.1.2',
+    node_version => '*'
+  }
 }
