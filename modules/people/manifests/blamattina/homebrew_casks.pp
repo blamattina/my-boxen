@@ -5,4 +5,5 @@ class people::blamattina::homebrew_casks {
   package { 'transporter-desktop': provider => 'brewcask' }
   package { 'backblaze': provider => 'brewcask' }
   package { 'aerial': provider => 'brewcask' }
+  package { 'marked': provider => 'brewcask' }
 }
