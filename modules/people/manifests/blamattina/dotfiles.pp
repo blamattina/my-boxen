@@ -1,5 +1,4 @@
 class people::blamattina::dotfiles {
-  # Install dotfiles and oh my zsh
   $home = "/Users/${boxen_user}"
   $dotfiles_folder = "${boxen::config::srcdir}/dotfiles"
 
@@ -21,5 +20,4 @@ class people::blamattina::dotfiles {
     cwd     => $home,
     user    => $::boxen_user
   }
-
 }
