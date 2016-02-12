@@ -8,7 +8,8 @@ class people::blamattina::dotfiles {
   }
 
   repository { $dotfiles_folder:
-    source => 'blamattina/dotfiles'
+    source => 'blamattina/dotfiles',
+    require => Repository["${home}/.oh-my-zsh"]
   }
 
   # Configuration management
@@ -18,6 +19,7 @@ class people::blamattina::dotfiles {
   exec  { 'link dotfiles':
     command => "rcup -d ${dotfiles_folder}",
     cwd     => $home,
-    user    => $::boxen_user
+    user    => $::boxen_user,
+    require => [Repository[$dotfiles_folder], Package['rcm']]
   }
 }
