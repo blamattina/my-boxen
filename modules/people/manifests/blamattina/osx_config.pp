@@ -21,4 +21,9 @@ class people::blamattina::osx_config {
   # Make Developer Tools available in Safari (ie: right-click and see
   # Inspect Element)
   include osx::safari::enable_developer_mode
+
+  # Finder Settings
+  include osx::finder::show_all_filename_extensions
+  include osx::finder::show_hidden_files
+  include osx::finder::unhide_library
 }
