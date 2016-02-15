@@ -26,7 +26,7 @@ class people::blamattina::dotfiles {
   }
 
   # Load git config out of dotfiles
-  git::config::global {'include.path':
+  git::config::global { 'include.path':
     value => '~/.gitconfig.dotfiles',
     require => Exec['link dotfiles']
   }
