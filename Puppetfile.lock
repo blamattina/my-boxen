@@ -1,9 +1,4 @@
 GITHUBTARBALL
-  remote: boxen/puppet-alfred
-  specs:
-    alfred (1.5.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
     boxen (3.11.1)
@@ -14,19 +9,9 @@ GITHUBTARBALL
     brewcask (0.0.6)
 
 GITHUBTARBALL
-  remote: boxen/puppet-chrome
-  specs:
-    chrome (1.2.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (2.0.1)
-
-GITHUBTARBALL
-  remote: boxen/puppet-dropbox
-  specs:
-    dropbox (1.4.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-foreman
@@ -99,29 +84,14 @@ GITHUBTARBALL
     ruby (8.5.4)
 
 GITHUBTARBALL
-  remote: boxen/puppet-spectacle
-  specs:
-    spectacle (1.0.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-tmux
-  specs:
-    tmux (1.0.2)
-
-GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
     xquartz (1.2.1)
-
-GITHUBTARBALL
-  remote: boxen/puppet-zsh
-  specs:
-    zsh (1.0.0)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
@@ -139,12 +109,9 @@ GITHUBTARBALL
     module_data (0.0.4)
 
 DEPENDENCIES
-  alfred (>= 0)
   boxen (= 3.11.1)
   brewcask (= 0.0.6)
-  chrome (= 1.2.0)
   dnsmasq (= 2.0.1)
-  dropbox (= 1.4.1)
   foreman (= 1.2.0)
   gcc (= 3.0.2)
   git (= 2.7.92)
@@ -161,10 +128,7 @@ DEPENDENCIES
   pkgconfig (= 1.0.0)
   repository (= 2.4.1)
   ruby (= 8.5.4)
-  spectacle (= 1.0.0)
   stdlib (= 4.7.0)
   sudo (= 1.0.0)
-  tmux (>= 0)
   xquartz (= 1.2.1)
-  zsh (= 1.0.0)
 
