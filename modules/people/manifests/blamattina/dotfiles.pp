@@ -1,4 +1,6 @@
 class people::blamattina::dotfiles {
+  include git
+
   $home = "/Users/${boxen_user}"
   $dotfiles_folder = "${boxen::config::srcdir}/dotfiles"
 
@@ -21,5 +23,11 @@ class people::blamattina::dotfiles {
     cwd     => $home,
     user    => $::boxen_user,
     require => [Repository[$dotfiles_folder], Package['rcm']]
+  }
+
+  # Load git config out of dotfiles
+  git::config::global {'include.path':
+    value => '~/.gitconfig.dotfiles',
+    require => Exec['link dotfiles']
   }
 }
