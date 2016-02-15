@@ -12,6 +12,11 @@ class people::blamattina::osx_config {
 
   # Keyboard Config
   include osx::keyboard::capslock_to_control
+  include osx::global::key_repeat_delay
+
+  class { 'osx::global::key_repeat_rate':
+      rate => 2
+  }
 
   # Make Developer Tools available in Safari (ie: right-click and see
   # Inspect Element)
