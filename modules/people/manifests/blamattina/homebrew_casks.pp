@@ -13,6 +13,7 @@ class people::blamattina::homebrew_casks {
     'firefox',             # Firefox: https://www.mozilla.org/en-US/firefox/new/
     'google-chrome',       # Chrome: https://google.com/chrome/
     'marked',              # Marked 2: http://marked2app.com/
+    'qsync-client',        # Qsybc Client: https://www.qnap.com/i/useng/utility/
     'slack',               # Slack: https://slack.com/
     'spectacle',           # Spectacle: https://www.spectacleapp.com/
     'superduper',          # SuperDuper: http://www.shirt-pocket.com/SuperDuper/
@@ -20,7 +21,7 @@ class people::blamattina::homebrew_casks {
   ]
 
   package { $brewcasks:
-   provider => 'brewcask',
+    provider => 'brewcask',
     require => Homebrew::Tap['caskroom/cask']
   }
 
