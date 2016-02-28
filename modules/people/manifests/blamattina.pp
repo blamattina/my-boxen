@@ -4,4 +4,5 @@ class people::blamattina {
   include people::blamattina::homebrew_casks
   include people::blamattina::dotfiles
   include people::blamattina::javascript
+  include people::blamattina::python
 }

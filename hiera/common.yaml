@@ -25,3 +25,6 @@
 # See https://github.com/boxen/puppet-nodejs#hiera-configuration
 "nodejs::build::ensure": "b8b99f129a715e62931aeeecd3848f080955bae0"
 "nodejs::nodenv::ensure": "v1.0.0"
+
+# See https://github.com/mloberg/puppet-python/commit/1ce92d6bf3f574d92cd55b42a24e8c9988e49cc8
+"python::pyenv::ensure": "v20160202"

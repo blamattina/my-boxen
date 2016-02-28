@@ -68,3 +68,6 @@ github "xquartz",     "1.2.1"
 
 # Generic OS X stuffs for boxen
 github "osx", "2.8.0"
+
+# Python Puppet Module for Boxen
+github "python", "3.0.2", :repo => "mloberg/puppet-python"
