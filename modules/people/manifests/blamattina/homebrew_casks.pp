@@ -26,19 +26,8 @@ class people::blamattina::homebrew_casks {
   }
 
   # installation of homebrew packages that require sudo
-
-  sudoers { 'installer':
-    users    => $::boxen_user,
-    hosts    => 'ALL',
-    commands => [
-      '(ALL) SETENV:NOPASSWD: /usr/sbin/installer',
-    ],
-    type     => 'user_spec',
-  }
-
   $sudo_brewcasks = [
     'alfred',       # Alfred 2: https://www.alfredapp.com/
-    'elm-platform', # elm programming language: http://elm-lang.org/
   ]
 
   package { $sudo_brewcasks:

@@ -1,17 +1,12 @@
-class people::blamattina::javascript {
-  # Install flow using homebrew
+class languages::javascript (
+  $versions = heira('languages::javascript::versions', ['5.5.0']),
+  $global   = heira('languages::javascript::global', '5.5.0')
+) {
+  # Install flow using homebrew http://flowtype.org/
   package { 'flow': }
 
-  # node versions
-  nodejs::version {
-    ['0.10.41', '0.12.7', '4.1.2', '4.2.6', '5.5.0']:
-  }
-
-  # sets default node
-  class {
-  'nodejs::global':
-    version => '5.5.0'
-  }
+  nodejs::version { $versions: }
+  class { 'nodejs::global': version => $global }
 
   npm_module { 'eslint':
     module => 'eslint',

@@ -52,22 +52,33 @@ Service {
 Homebrew::Formula <| |> -> Package <| |>
 
 node default {
+  # enable installation of homebrew packages that require sudo
+  sudoers { 'installer':
+    users    => $::boxen_user,
+    hosts    => 'ALL',
+    commands => [
+      '(ALL) SETENV:NOPASSWD: /usr/sbin/installer',
+    ],
+    type     => 'user_spec',
+  }
+
   # core modules, needed for most things
   include dnsmasq
   include git
   include hub
   include nginx
 
+  # language modules
+  include languages::javascript
+  include languages::python
+  include languages::ruby
+  include languages::elixir
+  include languages::elm
+
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
     fail('Please enable full disk encryption and try again')
   }
-
-  # default ruby versions
-  ruby::version { '1.9.3': }
-  ruby::version { '2.0.0': }
-  ruby::version { '2.1.8': }
-  ruby::version { '2.2.4': }
 
   # common, useful packages
   package {

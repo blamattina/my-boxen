@@ -1,30 +1,28 @@
----
-# This is an example of the kinds of things that you can configure via hiera.
-# If you've left the defaults in `/hiera.yml`, you might want to copy this file
-# to `hiera/common.yaml`, or feel free to start with a blank slate!
-
-# Have a gander at some of these examples to get an idea of some of the things
-# that you can affect 'out of the box', and then customise to your
-# heart's content.
-
-# See https://github.com/boxen/puppet-ruby for docs
-# ruby::global::version: "2.1.0"
-# ruby::rbenv_plugins:
-#   rbenv-vars:
-#     ensure: v1.0.0
-#     source: sstephenson/rbenv-vars
-#   ruby-build:
-#     ensure: v20131225.1
-#     source: sstephenson/ruby-build
-# ruby::version::alias:
-#   2.0.0: 2.0.0-p353
-#
-# # See https://github.com/boxen/puppet-java for docs
-# java::update_version: 51
-
+# JavaScript configuration
+languages::javascript::versions: ['0.12.7', '4.1.2', '4.2.6', '5.5.0']
+languages::javascript::global: '5.5.0'
+# nodeenv configuration
 # See https://github.com/boxen/puppet-nodejs#hiera-configuration
-"nodejs::build::ensure": "b8b99f129a715e62931aeeecd3848f080955bae0"
-"nodejs::nodenv::ensure": "v1.0.0"
+nodejs::build::ensure: 'b8b99f129a715e62931aeeecd3848f080955bae0'
+nodejs::nodenv::ensure: 'v1.0.0'
 
+# Python configuration
+languages::python::virtualenv: 'v20160202'
+languages::python::global: '3.5.1'
+# pyenv configuration
 # See https://github.com/mloberg/puppet-python/commit/1ce92d6bf3f574d92cd55b42a24e8c9988e49cc8
-"python::pyenv::ensure": "v20160202"
+python::pyenv::ensure: 'v20160202'
+
+# Ruby configuration
+languages::ruby::versions: ['2.1.8', '2.2.4', '2.3.0']
+languages::ruby::global: '2.3.0'
+# puppet-ruby configuration
+# https://github.com/boxen/puppet-ruby#hiera-configuration
+ruby::build::ensure: 'v20160228'
+ruby::rbenv::ensure: 'v1.0.0'
+
+# Elixir configuration
+languages::elixir::ensure: 'v1.2.3'
+
+# Elm configuration
+languages::elm::ensure: 'v0.16'
