@@ -4,20 +4,23 @@ class people::blamattina::homebrew_casks {
   # brew cask installs that do not require special privilages
 
   $brewcasks = [
-    '1password',           # 1password: https://agilebits.com/onepassword
-    'aerial',              # ATV Screensavers: https://github.com/JohnCoates/Aerial/
-    'backblaze',           # Backblaze: https://www.backblaze.com/
-    'bartender',           # Bartender 2: https://www.macbartender.com/
-    'chromium',            # Chromium: https://www.chromium.org/
-    'dropbox',             # Dropbox: https://www.dropbox.com/
-    'firefox',             # Firefox: https://www.mozilla.org/en-US/firefox/new/
-    'google-chrome',       # Chrome: https://google.com/chrome/
-    'marked',              # Marked 2: http://marked2app.com/
-    'qsync-client',        # Qsybc Client: https://www.qnap.com/i/useng/utility/
-    'slack',               # Slack: https://slack.com/
-    'spectacle',           # Spectacle: https://www.spectacleapp.com/
-    'superduper',          # SuperDuper: http://www.shirt-pocket.com/SuperDuper/
-    'transporter-desktop', # FileTransporter: http://connecteddata.com/
+    '1password',            # 1password: https://agilebits.com/onepassword
+    'adobe-creative-cloud', # adobe creative cloud: http://adobe.com
+    'aerial',               # ATV Screensavers: https://github.com/JohnCoates/Aerial/
+    'backblaze',            # Backblaze: https://www.backblaze.com/
+    'bartender',            # Bartender 2: https://www.macbartender.com/
+    'bittorrent-sync',      # Sync: https://getsync.com/
+    'caffeine',             # Caffeine: http://lightheadsw.com/caffeine/
+    'chromium',             # Chromium: https://www.chromium.org/
+    'dropbox',              # Dropbox: https://www.dropbox.com/
+    'firefox',              # Firefox: https://www.mozilla.org/en-US/firefox/new/
+    'google-chrome',        # Chrome: https://google.com/chrome/
+    'marked',               # Marked 2: http://marked2app.com/
+    'qsync-client',         # Qsybc Client: https://www.qnap.com/i/useng/utility/
+    'slack',                # Slack: https://slack.com/
+    'spectacle',            # Spectacle: https://www.spectacleapp.com/
+    'superduper',           # SuperDuper: http://www.shirt-pocket.com/SuperDuper/
+    'upthere-home',         # up there: upthere.com
   ]
 
   package { $brewcasks:
