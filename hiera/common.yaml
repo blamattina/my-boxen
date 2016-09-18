@@ -1,9 +1,9 @@
 # JavaScript configuration
-languages::javascript::versions: ['0.12.7', '4.1.2', '4.2.6', '5.5.0']
-languages::javascript::global: '5.5.0'
+languages::javascript::versions: ['0.12.7', '4.1.2', '4.2.6', '5.5.0', '6.5.0']
+languages::javascript::global: '6.5.0'
 # nodeenv configuration
 # See https://github.com/boxen/puppet-nodejs#hiera-configuration
-nodejs::build::ensure: 'b8b99f129a715e62931aeeecd3848f080955bae0'
+nodejs::build::ensure: '1f9023f3156f5058ade0d2bff07725f234405955'
 nodejs::nodenv::ensure: 'v1.0.0'
 
 # Python configuration

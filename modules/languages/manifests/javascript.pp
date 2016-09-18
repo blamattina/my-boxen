@@ -10,7 +10,7 @@ class languages::javascript (
 
   npm_module { 'eslint':
     module => 'eslint',
-    version => '~> 1.10.0',
+    version => '~> 3.5.0',
     node_version => '*'
   }
 
@@ -22,13 +22,13 @@ class languages::javascript (
 
   npm_module { 'coffeelint':
     module => 'coffeelint',
-    version => '~> 1.14.0',
+    version => '~> 1.15.0',
     node_version => '*'
   }
 
   npm_module { 'diff-so-fancy':
     module => 'diff-so-fancy',
-    version => '~> 0.1.2',
+    version => '~> 0.11.0',
     node_version => '*'
   }
 }
