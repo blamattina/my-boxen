@@ -11,8 +11,11 @@ class people::blamattina::homebrew {
   ]
   package { $homebrew_packages: }
 
-  # Text Editor
-  package {
-    'vim': ensure => present, install_options => [ '--override-system-vi' ]
+  homebrew::tap { 'neovim/neovim': }
+
+  package { 'neovim':
+    install_options => '--HEAD',
+    ensure          => installed,
+    require         => Homebrew::Tap['neovim/neovim']
   }
 }
