@@ -16,11 +16,9 @@ class people::blamattina::homebrew_casks {
     'firefox',              # Firefox: https://www.mozilla.org/en-US/firefox/new/
     'google-chrome',        # Chrome: https://google.com/chrome/
     'marked',               # Marked 2: http://marked2app.com/
-    'qsync-client',         # Qsybc Client: https://www.qnap.com/i/useng/utility/
     'slack',                # Slack: https://slack.com/
     'spectacle',            # Spectacle: https://www.spectacleapp.com/
-    'superduper',           # SuperDuper: http://www.shirt-pocket.com/SuperDuper/
-    'upthere-home',         # up there: upthere.com
+    'superduper'            # SuperDuper: http://www.shirt-pocket.com/SuperDuper/
   ]
 
   package { $brewcasks:
@@ -30,7 +28,7 @@ class people::blamattina::homebrew_casks {
 
   # installation of homebrew packages that require sudo
   $sudo_brewcasks = [
-    'alfred',       # Alfred 2: https://www.alfredapp.com/
+    'alfred',       # Alfred 3: https://www.alfredapp.com/
   ]
 
   package { $sudo_brewcasks:
