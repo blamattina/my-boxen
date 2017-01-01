@@ -4,14 +4,18 @@ class people::blamattina::dotfiles {
   $home = "/Users/${boxen_user}"
   $dotfiles_folder = "${boxen::config::srcdir}/dotfiles"
 
-  # Install dotfiles and oh my zsh
+  # Install dotfiles, tmuxifier, and oh my zsh
   repository { "${home}/.oh-my-zsh":
     source => 'robbyrussell/oh-my-zsh'
   }
 
+  repository { "${home}/.tmuxifier":
+    source =>  'jimeh/tmuxifier'
+  }
+
   repository { $dotfiles_folder:
     source => 'blamattina/dotfiles',
-    require => Repository["${home}/.oh-my-zsh"]
+    require => Repository["${home}/.oh-my-zsh", "${home}/.tmuxifier"]
   }
 
   # Configuration management
