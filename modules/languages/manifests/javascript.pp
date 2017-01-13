@@ -31,10 +31,4 @@ class languages::javascript (
     version      => '~> 1.15.0',
     node_version => '*'
   }
-
-  npm_module { 'diff-so-fancy':
-    module       => 'diff-so-fancy',
-    version      => '~> 0.11.0',
-    node_version => '*'
-  }
 }
