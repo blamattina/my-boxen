@@ -4,6 +4,8 @@ class people::blamattina {
   include people::blamattina::homebrew_casks
   include people::blamattina::dotfiles
 
+  include projects::all
+
   # google hangouts from the comand line
   $python = hiera('languages::python::global')
   python::package { "hangups":

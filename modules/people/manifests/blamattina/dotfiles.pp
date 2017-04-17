@@ -4,6 +4,14 @@ class people::blamattina::dotfiles {
   $home = "/Users/${boxen_user}"
   $dotfiles_folder = "${boxen::config::srcdir}/dotfiles"
 
+  # neovim python bindings
+  $python = hiera('languages::python::global')
+  python::package { 'neovim':
+    package => 'neovim',
+    python  => $python,
+    require => Class['languages::python']
+  }
+
   # Install dotfiles, tmuxifier, and oh my zsh
   repository { "${home}/.oh-my-zsh":
     source => 'robbyrussell/oh-my-zsh'
