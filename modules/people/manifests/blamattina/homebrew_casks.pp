@@ -5,11 +5,9 @@ class people::blamattina::homebrew_casks {
 
   $brewcasks = [
     '1password',            # 1password: https://agilebits.com/onepassword
-    'adobe-creative-cloud', # adobe creative cloud: http://adobe.com
     'aerial',               # ATV Screensavers: https://github.com/JohnCoates/Aerial/
     'backblaze',            # Backblaze: https://www.backblaze.com/
     'bartender',            # Bartender 2: https://www.macbartender.com/
-    'bittorrent-sync',      # Sync: https://getsync.com/
     'caffeine',             # Caffeine: http://lightheadsw.com/caffeine/
     'chromium',             # Chromium: https://www.chromium.org/
     'dropbox',              # Dropbox: https://www.dropbox.com/

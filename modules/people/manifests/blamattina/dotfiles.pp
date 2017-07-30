@@ -4,12 +4,22 @@ class people::blamattina::dotfiles {
   $home = "/Users/${boxen_user}"
   $dotfiles_folder = "${boxen::config::srcdir}/dotfiles"
 
+  # neovim
+
+  homebrew::tap { 'neovim/neovim': }
+
+  package { 'neovim':
+    install_options => '--HEAD',
+    ensure          => installed,
+    require         => Homebrew::Tap['neovim/neovim']
+  }
+
   # neovim python bindings
   $python = hiera('languages::python::global')
   python::package { 'neovim':
     package => 'neovim',
     python  => $python,
-    require => Class['languages::python']
+    require => [Class['languages::python'], Package['neovim']]
   }
 
   # Install dotfiles, tmuxifier, and oh my zsh

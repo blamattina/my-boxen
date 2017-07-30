@@ -11,12 +11,4 @@ class people::blamattina::homebrew {
     'z',
   ]
   package { $homebrew_packages: }
-
-  homebrew::tap { 'neovim/neovim': }
-
-  package { 'neovim':
-    install_options => '--HEAD',
-    ensure          => installed,
-    require         => Homebrew::Tap['neovim/neovim']
-  }
 }
